@@ -17,6 +17,6 @@ jobs:
       - name: Check Stars and License
         run: |
           test -n "${{ steps.sample.outputs.stars }}"
-          echo "${{ steps.sample.outputs.stars }}""
+          echo "${{ steps.sample.outputs.stars }}"
           test -n "${{ steps.sample.outputs.license }}"
           echo "${{ steps.sample.outputs.license }}"
