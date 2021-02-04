@@ -1,4 +1,4 @@
-# docker-action-template for Github
+# GitHub Docker container action template
 
 This is a template repository for [creating a GitHub Docker container action](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-a-docker-container-action).
 
