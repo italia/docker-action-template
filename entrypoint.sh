@@ -27,4 +27,6 @@ if [ -z "${LICENSE}" ] || [ "${LICENSE}" = "null" ]; then
   exit 1
 fi
 
+echo "Repo has ${STAR_COUNT} ⭐️ and is released under ${LICENSE} license"
+
 echo "::set-output name=star::${STAR_COUNT}"
