@@ -1,7 +1,7 @@
 # action-template for Github
 
-This is a template repository for [creating a Docker container action](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-a-docker-container-action).
-with release automation and [reviewdog](https://github.com/reviewdog/reviewdog) (linters) integrations.
+This is a template repository for [creating a GitHub Docker container action](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-a-docker-container-action).
+
 Click `Use this template` button to create your action based on this template.
 
 A sample action is to get GitHub star counts from a given repository.
