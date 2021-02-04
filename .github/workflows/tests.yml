@@ -9,8 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Get Star Count
+      - name: Get Stars and License
         uses: ./
         id: sample
         with:
           repo: "italia/publiccode-parser-action"
+      - name: Check Stars and License
+        run: |
+          test -n "${{ steps.sample.outputs.stars }}"
+          echo "${{ steps.sample.outputs.stars }}""
+          test -n "${{ steps.sample.outputs.license }}"
+          echo "${{ steps.sample.outputs.license }}"

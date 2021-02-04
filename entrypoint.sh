@@ -15,18 +15,19 @@ get_repo() {
   fi
 }
 
-STAR_COUNT=$(get_repo | jq -r '.stargazers_count')
-if [ -z "${STAR_COUNT}" ] || [ "${STAR_COUNT}" = "null" ]; then
+STARS_COUNT=$(get_repo | jq -r '.stargazers_count')
+if [ -z "${STARS_COUNT}" ] || [ "${STARS_COUNT}" = "null" ]; then
   echo "cannot get star count from ${INPUT_REPO}"
   exit 1
 fi
 
 LICENSE=$(get_repo | jq -r '.license.name')
 if [ -z "${LICENSE}" ] || [ "${LICENSE}" = "null" ]; then
-  echo "cannot get star count from ${INPUT_REPO}"
+  echo "cannot get license from ${INPUT_REPO}"
   exit 1
 fi
 
-echo "Repo has ${STAR_COUNT} ⭐️ and is released under ${LICENSE} license"
+echo "Repo has ${STARS_COUNT} ⭐️ and is released under ${LICENSE} license"
 
-echo "::set-output name=star::${STAR_COUNT}"
+echo "::set-output name=stars::${STARS_COUNT}"
+echo "::set-output name=license::${LICENSE}"

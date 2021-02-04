@@ -11,6 +11,12 @@ inputs:
     default: '${{ github.repository }}'
     required: true
 
+outputs:
+  stars:
+    description: 'The stars of the repository'
+  license:
+    description: 'The license used in the repository'
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
