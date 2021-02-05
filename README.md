@@ -18,7 +18,7 @@ Include this action in your repo by creating
 on: [push, pull_request]
 
 jobs:
-  publiccode_validation:
+  examplejob:
     runs-on: ubuntu-latest
     name: Get Stars and License
     steps:
