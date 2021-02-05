@@ -10,7 +10,7 @@ get_repo() {
     echo "Use INPUT_GITHUB_TOKEN to get release data." >&2
     curl -s -H "Authorization: token ${INPUT_GITHUB_TOKEN}" "https://api.github.com/repos/${INPUT_REPO}"
   else
-    echo "INPUT_GITHUB_TOKEN is not available. Subscequent GitHub API call may fail due to API limit." >&2
+    echo "INPUT_GITHUB_TOKEN is not available. Subsequent GitHub API call may fail due to API limit." >&2
     curl -s "https://api.github.com/repos/${INPUT_REPO}"
   fi
 }
