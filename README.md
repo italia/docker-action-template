@@ -43,7 +43,7 @@ This software is maintained by the
 
 ## License
 
-© 2020 Dipartimento per la Trasformazione Digitale - Presidenza del Consiglio dei
+© 2021 Dipartimento per la Trasformazione Digitale - Presidenza del Consiglio dei
 Ministri
 
 Licensed under the EUPL.
