@@ -9,6 +9,14 @@ Click `Use this template` button to create your action based on this template.
 
 A sample action to get GitHub star counts and license from a given repository.
 
+## Inputs
+
+The following inputs briefly explained here are fully declared and documented in the [action.yaml](action.yaml):
+
+* `repo` [**Required**] - GitHub repository to fetch (default `${{ github.repository }}`)
+
+* `github_token` [**Optional**] - GitHub token to interact with GitHub API (default `${{ github.token }}`)
+
 ## Examples
 
 Include this action in your repo by creating 
